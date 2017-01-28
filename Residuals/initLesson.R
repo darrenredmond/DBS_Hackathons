@@ -6,9 +6,9 @@
 }
 
 galton <- read.csv(file.path(.get_course_path(),
-	"Regression_Models","Introduction", "galton.csv"))
+	"DBS_Hackathons","Introduction", "galton.csv"))
 est <- function(slope, intercept)intercept + slope*galton$parent
 sqe <- function(slope, intercept)sum( (est(slope, intercept)-galton$child)^2)
 attenu <- datasets::attenu
 fname <- paste(.get_course_path(),
-	"Regression_Models","Residuals","res_eqn.R",sep="/")
+	"DBS_Hackathons","Residuals","res_eqn.R",sep="/")

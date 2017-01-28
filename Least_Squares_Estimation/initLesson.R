@@ -9,7 +9,7 @@
 # here will show up in the user's workspace when he or she begins
 # the lesson.
 galton <- read.csv(file.path(.get_course_path(),
-	"Regression_Models", "Introduction", "galton.csv"))
+	"DBS_Hackathons", "Introduction", "galton.csv"))
 gch <- galton$child
 gpa <- galton$parent
 gpa_nor <- (gpa - mean(gpa))/sd(gpa)
@@ -19,11 +19,11 @@ maniflg <- find.package("manipulate",quiet=TRUE)
 if  (isTRUE((Sys.getenv("RSTUDIO") == "1")&&(nchar(maniflg)>0 ))) {
   library(manipulate)
   fname <- file.path(.get_course_path(),
-  	"Regression_Models","Least_Squares_Estimation","slopedemo.R")
+  	"DBS_Hackathons","Least_Squares_Estimation","slopedemo.R")
 } else {
   fname <- file.path(.get_course_path(), 
-  	"Regression_Models","Least_Squares_Estimation","slopedemo_no_mani.R")  
+  	"DBS_Hackathons","Least_Squares_Estimation","slopedemo_no_mani.R")
 }
 file.edit(fname)
 fname2 <- file.path(.get_course_path(),
-	"Regression_Models","Least_Squares_Estimation","finalplot.R")
+	"DBS_Hackathons","Least_Squares_Estimation","finalplot.R")

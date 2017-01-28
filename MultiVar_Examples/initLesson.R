@@ -14,7 +14,7 @@ pairs(swiss, panel = panel.smooth, main = "Swiss data", col = 3 + (swiss$Catholi
 
 # Put initialization code in this file.
 file.copy(from=file.path(.get_course_path(),
-	"Regression_Models", "MultiVar_Examples", "swissLMs.R"), 
+	"DBS_Hackathons", "MultiVar_Examples", "swissLMs.R"),
           to="swissLMs.R")
 file.edit("swissLMs.R")
 source("swissLMs.R", local=TRUE)

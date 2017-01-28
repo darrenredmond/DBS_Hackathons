@@ -6,5 +6,5 @@
 }
 
 galton <- read.csv(file.path(.get_course_path(),
-	"Regression_Models","Introduction", "galton.csv"))
+	"DBS_Hackathons","Introduction", "galton.csv"))
 n <- 928
