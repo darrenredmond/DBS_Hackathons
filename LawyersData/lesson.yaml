@@ -80,7 +80,7 @@
   Output: From the summary output - how many corporate and litigation lawyers are there?
   AnswerChoices: '35 and 36';'48 and 19';'30 and 41';'18 and 53'
   CorrectAnswer: '30 and 41'
-  AnswerTests: omnitest(correctVal='30 and 41')
+  AnswerTests: omnitest(correctVal="'30 and 41'")
   Hint: Read the summary output above for the number of corporate and litigation lawyers or look at the file in excel.
 
 - Class: cmd_question
