@@ -7,7 +7,89 @@
   Version: 1.0.0
 
 - Class: text
-  Output: "Load in the LawyersData file."
+  Output: "In this exercise we are going to look at the Boston Lawyers Dataset. It is contained in the file LawyersData.csv.
+    You can download this file from https://raw.githubusercontent.com/darrenredmond/DBS_Hackathons/master/LawyersData/LawyersData.csv
+    You might also open this file in Excel and observe the data too."
+
+- Class: cmd_question
+  Output: To load in the LawyersData.csv file from the current directory we can use the read.csv command and we should load the data into the variable lawyers_data. Type
+    lawyers_data <- read.csv('./LawyersData.csv') and press Enter.
+  CorrectAnswer: lawyers_data <- read.csv('./LawyersData.csv') 
+  AnswerTests: omnitest(correctExpr="lawyers_data <- read.csv('./LawyersData.csv')")
+  Hint: Type lawyers_data <- read.csv('./LawyersData.csv') and press Enter.
+
+- Class: text
+  Output: "R has loaded the data into a variable lawyers_data and it should appear in the variables panel in the top right of R Studio."
+
+- Class: text
+  Output: "You can view the value of the data by typing lawyers_data and pressing enter."
+
+- Class: cmd_question
+  Output: You can view the value of the data by typing lawyers_data and pressing enter. Type
+    lawyers_data and press Enter.
+  CorrectAnswer: lawyers_data
+  AnswerTests: omnitest(correctExpr="lawyers_data")
+  Hint: Type lawyers_data and press Enter.
+
+- Class: text
+  Output: "You might notice that output with so many observations is unwieldy. You can use the head and tail commands to view the first 6 and last 6 observations respectively."
+
+- Class: cmd_question
+  Output: You can view the first observations by typing head(lawyers_data) and pressing enter. Type
+    head(lawyers_data) and press Enter.
+  CorrectAnswer: head(lawyers_data) 
+  AnswerTests: omnitest(correctExpr="head(lawyers_data)")
+  Hint: Type head(lawyers_data) and press Enter.
+
+- Class: cmd_question
+  Output: You can view the first observations by typing tail(lawyers_data) and pressing enter. Type
+    tail(lawyers_data) and press Enter.
+  CorrectAnswer: tail(lawyers_data) 
+  AnswerTests: omnitest(correctExpr="tail(lawyers_data)")
+  Hint: Type tail(lawyers_data) and press Enter.
+
+- Class: cmd_question 
+  Output: "An useful command is the str command which will tell us the structure of the data. Type
+    str(lawyers_data) and press Enter."
+  CorrectAnswer: str(lawyers_data) 
+  AnswerTests: omnitest(correctExpr="str(lawyers_data)")
+  Hint: Type str(lawyers_data) and press Enter.
+
+- Class: mult_question  
+  Output: How many observations of data do we see?
+  AnswerChoices: 71;81;91;101
+  CorrectAnswer: 71
+  AnswerTests: omnitest(correctVal='71')
+  Hint: Read the str output above for the number of observations or look at the file in excel.
+
+- Class: mult_question
+  Output: How many observations of data do we see?
+  AnswerChoices: 5;6;7;8
+  CorrectAnswer: 7
+  AnswerTests: omnitest(correctVal='7')
+  Hint: Read the str output above for the number of variables or look at the file in excel.
+
+- Class: cmd_question
+  Output: "Another useful command is the summary command which will summarise the data for us. Type
+    summary(lawyers_data) and press Enter."
+  CorrectAnswer: summary(lawyers_data)
+  AnswerTests: omnitest(correctExpr="summary(lawyers_data)")
+  Hint: Type summary(lawyers_data) and press Enter.
+
+- Class: mult_question
+  Output: From the summary output - how many corporate and litigation lawyers are there?
+  AnswerChoices: 35,36;48,19;30,41;18,53
+  CorrectAnswer: 30,41
+  AnswerTests: omnitest(correctVal='30,41')
+  Hint: Read the summary output above for the number of corporate and litigation lawyers or look at the file in excel.
+
+- Class: cmd_question
+  Output: "What proportion of the lawyers practice litigation law? You can give your answer to 2 decimal places.
+    The subset command is very useful to answer this type of question. Type
+    round(nrow(subset(lawyers_data, Practice == 'Litigation'))/nrow(lawyers_data), 2) and press Enter.
+  CorrectAnswer: 0.58
+  AnswerTests: omnitest(correctExpr="0.58")
+  Hint: Type round(nrow(subset(lawyers_data, Practice == 'Litigation'))/nrow(lawyers_data), 2) and press Enter.
 
 - Class: figure
   Output: Now suppose we want to see the gender by seniority of the partners.

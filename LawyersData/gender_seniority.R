@@ -1,5 +1,5 @@
 # Question 1
-lawyers_data <- read.csv('~/Downloads/LawyersData.csv')
+lawyers_data <- read.csv('./LawyersData.csv')
 
 # (a) Load the lawyers’ data into R. What proportion of the lawyers practice litigation law?
 # (Give your answer to 2 decimal places.)
