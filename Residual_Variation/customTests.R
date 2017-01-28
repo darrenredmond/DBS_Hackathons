@@ -39,6 +39,11 @@ getExpr <- function(){
 
 COURSE = 'regression_residual_variation'
 
+loadDigest <- function(){
+  if (!require("digest")) install.packages("digest")
+  library(digest)
+}
+
 dbs_on_demand <- function(){
   loadDigest()
   selection <- getState()$val
