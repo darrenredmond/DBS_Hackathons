@@ -7,5 +7,5 @@ barplot(gender_by_seniority, main="Gender by Seniority",
 
 age_by_gender <- table(lawyers_data$Gender, lawyers_data$Age)
 barplot(age_by_gender, main="Age by Gender",
-        xlab="Agen", ylab="Gender", col=c("darkblue","red"),
+        xlab="Age", ylab="Gender", col=c("darkblue","red"),
         legend = rownames(age_by_gender))

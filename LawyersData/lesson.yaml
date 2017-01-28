@@ -88,6 +88,9 @@
 #  AnswerTests: omnitest(correctExpr='0.58')
 #  Hint: Type round(nrow(subset(lawyers_data, Practice == 'Litigation'))/nrow(lawyers_data), 2) and press Enter.
 
+- Class: text
+  Output: "R is fantastic for looking at plots of data - so suppose we wanted to look R has loaded the data into a variable lawyers_data and it should appear in the variables panel in the top right of R Studio."
+
 - Class: figure
   Output: Now suppose we want to see the gender by seniority of the partners.
   Figure: gender_seniority.R
