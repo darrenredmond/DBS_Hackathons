@@ -11,12 +11,9 @@
     You can download this file from https://raw.githubusercontent.com/darrenredmond/DBS_Hackathons/master/LawyersData/LawyersData.csv
     You might also open this file in Excel and observe the data too."
 
-- Class: cmd_question
+- Class: text 
   Output: To load in the LawyersData.csv file from the current directory we can use the read.csv command and we should load the data into the variable lawyers_data. Type
-    lawyers_data <- read.csv('./LawyersData.csv') and press Enter.
-  CorrectAnswer: lawyers_data <- read.csv('./LawyersData.csv') 
-  AnswerTests: omnitest(correctExpr="lawyers_data <- read.csv('./LawyersData.csv')")
-  Hint: Type lawyers_data <- read.csv('./LawyersData.csv') and press Enter.
+    lawyers_data <- read.csv('LawyersData.csv') and press Enter. We've loaded the data in for you in this tutorial.
 
 - Class: text
   Output: "R has loaded the data into a variable lawyers_data and it should appear in the variables panel in the top right of R Studio."
