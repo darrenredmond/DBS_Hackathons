@@ -54,14 +54,14 @@
 
 - Class: mult_question  
   Output: How many observations of data do we see?
-  AnswerChoices: 71;81;91;101
+  AnswerChoices: 91;81;71;101
   CorrectAnswer: 71
   AnswerTests: omnitest(correctVal='71')
   Hint: Read the str output above for the number of observations or look at the file in excel.
 
 - Class: mult_question
-  Output: How many observations of data do we see?
-  AnswerChoices: 5;6;7;8
+  Output: How many variables for the data do we see?
+  AnswerChoices: 5;7;6;8
   CorrectAnswer: 7
   AnswerTests: omnitest(correctVal='7')
   Hint: Read the str output above for the number of variables or look at the file in excel.
