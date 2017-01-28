@@ -1,0 +1,22 @@
+- Class: meta
+  Course: DBS Hackathons 
+  Lesson: LawyersData 
+  Author: Darren Redmond
+  Type: Standard
+  Organization: Dublin Business School 
+  Version: 1.0.0
+
+- Class: text
+  Output: "Load in the LawyersData file."
+
+- Class: figure
+  Output: Now suppose we want to see the gender by seniority of the partners.
+  Figure: gender_seniority.R
+  FigureType: new
+
+- Class: mult_question
+  Output: "Would you like to receive credit for completing this course on dbsdataprojects.com?"
+  CorrectAnswer: NULL
+  AnswerChoices: Yes;No
+  AnswerTests: dbs_on_demand()
+  Hint: ""
