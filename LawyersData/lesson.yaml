@@ -83,13 +83,13 @@
 #  AnswerTests: omnitest(correctVal="'30 and 41'")
 #  Hint: Read the summary output above for the number of corporate and litigation lawyers or look at the file in excel.
 
-- Class: cmd_question
-  Output: "What proportion of the lawyers practice litigation law? You can give your answer to 2 decimal places.
-    The subset command is very useful to answer this type of question. Type
-    round(nrow(subset(lawyers_data, Practice == 'Litigation'))/nrow(lawyers_data), 2) and press Enter."
-  CorrectAnswer: 0.58
-  AnswerTests: omnitest(correctExpr="0.58")
-  Hint: Type round(nrow(subset(lawyers_data, Practice == 'Litigation'))/nrow(lawyers_data), 2) and press Enter.
+#- Class: cmd_question
+#  Output: "What proportion of the lawyers practice litigation law? You can give your answer to 2 decimal places.
+#    The subset command is very useful to answer this type of question. Type
+#    round(nrow(subset(lawyers_data, Practice == 'Litigation'))/nrow(lawyers_data), 2) and press Enter."
+#  CorrectAnswer: 0.58
+#  AnswerTests: omnitest(correctExpr='0.58')
+#  Hint: Type round(nrow(subset(lawyers_data, Practice == 'Litigation'))/nrow(lawyers_data), 2) and press Enter.
 
 - Class: figure
   Output: Now suppose we want to see the gender by seniority of the partners.
