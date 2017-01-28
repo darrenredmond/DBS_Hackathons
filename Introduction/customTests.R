@@ -19,6 +19,11 @@ getExpr <- function(){
   getState()$expr
 }
 
+loadDigest <- function(){
+  if (!require("digest")) install.packages("digest")
+  library(digest)
+}
+
 COURSE = 'regression_introduction'
 
 dbs_on_demand <- function(){
